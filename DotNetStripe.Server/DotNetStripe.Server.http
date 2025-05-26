@@ -1,0 +1,6 @@
+@DotNetStripe.Server_HostAddress = http://localhost:5227
+
+GET {{DotNetStripe.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
