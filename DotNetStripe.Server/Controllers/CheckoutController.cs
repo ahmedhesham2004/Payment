@@ -58,7 +58,7 @@ public class CheckoutController(IConfiguration configuration) : ControllerBase
         var options = new SessionCreateOptions
         {
             // Stripe calls the URLs below when certain checkout events happen such as success and failure.
-            SuccessUrl = $"{thisApiUrl}/checkout/success?sessionId=" + "{CHECKOUT_SESSION_ID}", // Customer paid.
+            SuccessUrl = $"{thisApiUrl}/api/checkout/success?sessionId=" + "{CHECKOUT_SESSION_ID}", // Customer paid.
             CancelUrl = s_wasmClientURL + "failure",  // Checkout cancelled.
             PaymentMethodTypes = ["card"],
             LineItems =

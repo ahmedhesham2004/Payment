@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace DotNetStripe.Server.Controllers;
-[Route("api/[controller]/[action]")]
+[Route("api/[controller]")]
 [ApiController]
 public class ProductController(ApplicationDbContext context) : ControllerBase
 {
